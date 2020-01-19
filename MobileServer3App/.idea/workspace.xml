@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3383eb89-b9dd-42ec-8255-b0a65f1c3008" name="Default Changelist" comment="init">
+      <change afterPath="$PROJECT_DIR$/../AdminProt/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/app/pages/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/app/pages/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/app/pages/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/app/services/data.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/app/services/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdminProt/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MobileServer3App.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/data-table/data-table.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/data-table/data-table.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/data-table/data-table.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/data-table/data-table.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/model/device.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/model/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/not-found/not-found.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/not-found/not-found.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/not-found/not-found.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/not-found/not-found.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/auth/auth.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/http.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/http.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tslint.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\work\MobileServer3App\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WRaEiNLo79CjOpmVri1exYCeZ6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\work\MobileServer3App\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\MobileServer3App\src\app\services\auth" />
+      <recent name="C:\work\MobileServer3App\src\app\components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (MobileServer3App)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (MobileServer3App)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3383eb89-b9dd-42ec-8255-b0a65f1c3008" name="Default Changelist" comment="" />
+      <created>1579114750239</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579114750239</updated>
+      <workItem from="1579114751875" duration="1749000" />
+      <workItem from="1579364530791" duration="327000" />
+      <workItem from="1579365054455" duration="4141000" />
+      <workItem from="1579454697118" duration="9785000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="179" key="#TSLint" timestamp="1579365370167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#TSLint/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579365370167" />
+    <state x="585" y="115" width="1054" height="809" key="CommitChangelistDialog2" timestamp="1579467019016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="115" width="1054" height="809" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579467019016" />
+    <state x="816" y="414" key="Github.ShareDialog" timestamp="1579466640784">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="816" y="414" key="Github.ShareDialog/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579466640784" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1579458244951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579458244951" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1579458244951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579458244951" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1579458244950">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579458244950" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1579458244951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579458244951" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1579369199247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199247" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1579369199247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199247" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1579369199247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199247" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1579369199247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199247" />
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom" timestamp="1579369199248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199248" />
+    <state width="1899" height="348" key="GridCell.Tab.2.center" timestamp="1579369199247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199247" />
+    <state width="1899" height="348" key="GridCell.Tab.2.left" timestamp="1579369199247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199247" />
+    <state width="1899" height="348" key="GridCell.Tab.2.right" timestamp="1579369199247">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199247" />
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom" timestamp="1579369199248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199248" />
+    <state width="1899" height="348" key="GridCell.Tab.3.center" timestamp="1579369199248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.center/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199248" />
+    <state width="1899" height="348" key="GridCell.Tab.3.left" timestamp="1579369199248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.left/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199248" />
+    <state width="1899" height="348" key="GridCell.Tab.3.right" timestamp="1579369199248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579369199248" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579466882387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1579466882387" />
+  </component>
+</project>
