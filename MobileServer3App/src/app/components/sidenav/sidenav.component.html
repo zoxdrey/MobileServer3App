@@ -1,0 +1,13 @@
+<mat-sidenav-container class="sidenav" [hasBackdrop]="false">
+  <mat-sidenav [opened]="isOpen" [mode]="mode">
+    <mat-nav-list>
+      <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="mat-app-background basic-container">
+      <app-tab></app-tab>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

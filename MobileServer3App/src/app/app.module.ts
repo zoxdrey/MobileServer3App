@@ -6,7 +6,15 @@ import { DataTableComponent } from './components/data-table/data-table.component
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatNativeDateModule, MatTableModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatFormFieldModule, MatIconModule,
+  MatInputModule, MatListModule,
+  MatNativeDateModule, MatSidenavModule,
+  MatTableModule, MatTabsModule,
+  MatToolbarModule
+} from '@angular/material';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import {RouterModule, Routes} from '@angular/router';
@@ -14,6 +22,9 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { TabComponent } from './components/tab/tab.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 
 const appRoutes: Routes = [
@@ -33,7 +44,10 @@ const appRoutes: Routes = [
     NotFoundComponent,
     ButtonComponent,
     CardComponent,
-    InputComponent
+    InputComponent,
+    ToolbarComponent,
+    TabComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +61,12 @@ const appRoutes: Routes = [
     MatInputModule,
     RouterModule.forRoot(appRoutes),
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatTabsModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
