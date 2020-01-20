@@ -1,7 +1,12 @@
 <mat-sidenav-container class="sidenav" [hasBackdrop]="false">
   <mat-sidenav [opened]="isOpen" [mode]="mode">
     <mat-nav-list>
-      <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+      <a mat-list-item routerLink="/home">Устройства</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="/some">Приложения</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="/somesome">Конфигурации</a>
+      <mat-divider></mat-divider>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
