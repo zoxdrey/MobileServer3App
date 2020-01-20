@@ -1,0 +1,15 @@
+<mat-card class="login-card">
+  <mat-card-header>
+  </mat-card-header>
+  <mat-card-content class="login-card-content">
+    <p>
+      <app-input ngDefaultControl [placeholder]="loginPlaceholder" [(ngModel)]="login"></app-input>
+    </p>
+    <p>
+      <app-input ngDefaultControl [type]=inputType [placeholder]="passwordPlaceholder" [(ngModel)]="password"></app-input>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <app-button (loginButtonClicked)="cardLogin()"></app-button>
+  </mat-card-actions>
+</mat-card>
