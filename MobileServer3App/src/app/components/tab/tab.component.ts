@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab.component.css']
 })
 export class TabComponent implements OnInit {
+  placeholder = 'Enter some';
 
   constructor() { }
 

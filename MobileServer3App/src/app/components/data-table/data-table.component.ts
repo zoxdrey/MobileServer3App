@@ -26,8 +26,4 @@ export class DataTableComponent implements OnInit {
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
-
-  testkeyaup(value: string) {
-    this.testkeyupvalue = value;
-  }
 }

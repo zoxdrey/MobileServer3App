@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
+  userName = 'User';
 
-  constructor() { }
+  constructor() {
+    console.log(localStorage.getItem('user_name'));
+    this.userName = localStorage.getItem('user_name');
+  }
 
   ngOnInit() {
+
   }
 
 }
