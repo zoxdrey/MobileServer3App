@@ -16,6 +16,7 @@ export class AuthService {
       .subscribe((resp: any) => {
         this.router.navigate(['home']);
         localStorage.setItem('auth_token', resp.token);
+        localStorage.setItem('user_name', login);
       });
   }
 }
