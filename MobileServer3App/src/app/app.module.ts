@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataTableComponent } from './components/data-table/data-table.component';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {
   MatButtonModule,
   MatCardModule,
@@ -25,6 +25,9 @@ import { InputComponent } from './components/input/input.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { TabComponent } from './components/tab/tab.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import {AuthService} from './services/auth/auth.service';
+import {ApiService} from './services/api.service';
+import {AuthInterceptor} from './services/auth/auth.interceptor';
 
 
 const appRoutes: Routes = [
@@ -68,7 +71,13 @@ const appRoutes: Routes = [
     MatSidenavModule,
     MatListModule
   ],
-  providers: [],
+  providers: [AuthService,
+  ApiService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }],
   bootstrap: [AppComponent]
 })
 export class AppModule {

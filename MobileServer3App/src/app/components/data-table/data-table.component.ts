@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource} from '@angular/material';
-import {HttpService} from '../../services/http.service';
+import {ApiService} from '../../services/api.service';
 import {Device} from '../../model/device';
 import {Observable} from 'rxjs';
 import {filter} from 'rxjs/operators';
@@ -15,7 +15,7 @@ export class DataTableComponent implements OnInit {
   dataSource = new MatTableDataSource();
   devices: Observable<Device[]>;
   private testkeyupvalue: string;
-  constructor(private httpService: HttpService ) {
+  constructor(private httpService: ApiService ) {
     this.displayedColumns = ['uuid', 'name', 'id', 'imei'];
   }
 
