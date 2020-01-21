@@ -6,7 +6,7 @@ import {Observable} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class HttpService {
+export class ApiService {
   private server = 'http://localhost:8082/api/device/list';
   private body: object = {
     project: 'project2',
