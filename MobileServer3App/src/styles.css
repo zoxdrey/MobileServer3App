@@ -14,10 +14,6 @@ body, html {
 .basic-container {
   padding: 10px;
 }
-.version-info {
-  font-size: 8pt;
-  float: right;
-}
 
 .login-card {
   vertical-align: middle;
@@ -40,9 +36,18 @@ app-button{
 .mat-card-content{
   display: flex;
 }
-
-mat-form-field{
+/* Structure */
+table {
   width: 100%;
+}
+
+.data-table-filter-input{
+  text-align: right;
+}
+.mat-form-field {
+  font-size: 14px;
+}
+mat-form-field{
 }
 
 .user-icon {
@@ -73,4 +78,30 @@ mat-sidenav-container{
 .toolbar-user-name{
   font-size: 14px;
 }
+
+.mat-form-field-wrapper{
+border: 1px;
+}
+
+.mat-cell{
+  font-size: 12px;
+}
+
+tr.mat-row.ng-star-inserted{
+  height: 32px;
+}
+
+table.mat-table{
+  border: 1px solid rgba(0, 0, 0, 0.33);
+}
+
+mat-form-field.data-table-filter{
+  float: right;
+}
+
+button.refresh-button{
+  margin: 10px;
+}
+
+
 
