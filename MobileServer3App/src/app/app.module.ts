@@ -11,7 +11,7 @@ import {
   MatCardModule,
   MatFormFieldModule, MatIconModule,
   MatInputModule, MatListModule,
-  MatNativeDateModule, MatSidenavModule,
+  MatNativeDateModule, MatPaginatorModule, MatSidenavModule, MatSortModule,
   MatTableModule, MatTabsModule,
   MatToolbarModule
 } from '@angular/material';
@@ -69,7 +69,9 @@ const appRoutes: Routes = [
     MatIconModule,
     MatTabsModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [AuthService,
   ApiService,
