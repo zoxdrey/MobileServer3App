@@ -93,6 +93,7 @@ tr.mat-row.ng-star-inserted{
 
 table.mat-table{
   border: 1px solid rgba(0, 0, 0, 0.33);
+  border-bottom: none;
 }
 
 mat-form-field.data-table-filter{
@@ -101,6 +102,11 @@ mat-form-field.data-table-filter{
 
 button.refresh-button{
   margin: 10px;
+}
+
+mat-paginator{
+  border: 1px solid rgba(0, 0, 0, 0.33);
+  border-top:none;
 }
 
 

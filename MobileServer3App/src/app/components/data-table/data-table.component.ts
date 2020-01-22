@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {MatTableDataSource} from '@angular/material';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 import {ApiService} from '../../services/api.service';
 import {Device} from '../../model/device';
 import {Observable} from 'rxjs';
@@ -12,18 +12,32 @@ import {filter} from 'rxjs/operators';
 })
 export class DataTableComponent implements OnInit {
   displayedColumns: string[];
-  dataSource = new MatTableDataSource();
-  devices: Observable<Device[]>;
-  private testkeyupvalue: string;
+  // devices: Observable<Device[]>;
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  device: Device[] = [{}];
+  dataSource: MatTableDataSource<Device[]>;
+
   constructor(private httpService: ApiService ) {
     this.displayedColumns = ['uuid', 'name', 'id', 'imei'];
   }
 
   ngOnInit() {
-    this.httpService.getDevices().subscribe(data => this.devices = data.devices);
+    this.loadDevices();
   }
 
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+
+  loadDevices() {
+    this.httpService.getDevices().subscribe(data => {
+      this.dataSource = new MatTableDataSource(data.devices);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
+      });
   }
 }
