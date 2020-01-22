@@ -39,7 +39,21 @@ export class AuthInterceptor implements HttpInterceptor {
         )
       );
     } else {
-      return next.handle(req.clone());
+      return next.handle(req.clone()).pipe(
+        tap(
+          event => {
+            if (event instanceof HttpResponse) {
+              console.log('Server response');
+            }
+          }, err => {
+            if (err instanceof HttpErrorResponse) {
+              if (err.status === 401) {
+                this.router.navigate(['login']);
+              }
+            }
+          }
+          )
+        );
     }
   }
 
