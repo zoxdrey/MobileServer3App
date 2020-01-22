@@ -90,6 +90,9 @@ border: 1px;
 tr.mat-row.ng-star-inserted{
   height: 32px;
 }
+tr.mat-row.ng-star-inserted:hover{
+  background: rgba(0, 0, 0, 0.31);
+}
 
 table.mat-table{
   border: 1px solid rgba(0, 0, 0, 0.33);
@@ -109,5 +112,8 @@ mat-paginator{
   border-top:none;
 }
 
+mat-card.mat-card-device-detail{
+  margin: 10px;
+}
 
 

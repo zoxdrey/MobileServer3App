@@ -1,9 +1,10 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 import {ApiService} from '../../services/api.service';
 import {Device} from '../../model/device';
 import {Observable} from 'rxjs';
 import {filter} from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-data-table',
@@ -17,6 +18,7 @@ export class DataTableComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
   device: Device[] = [{}];
   dataSource: MatTableDataSource<Device[]>;
+  @Output() detailedData =  new EventEmitter();
 
   constructor(private httpService: ApiService ) {
     this.displayedColumns = ['uuid', 'name', 'id', 'imei'];
@@ -39,5 +41,9 @@ export class DataTableComponent implements OnInit {
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
       });
+  }
+
+  showDetail(row: any) {
+    this.detailedData.emit(row);
   }
 }
