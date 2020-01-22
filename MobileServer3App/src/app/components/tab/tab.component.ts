@@ -1,4 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
+import {Device} from '../../model/device';
 
 @Component({
   selector: 'app-tab',
@@ -7,12 +8,19 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 })
 export class TabComponent implements OnInit {
   placeholder = 'Enter some';
-  constructor() { }
+  data: Device;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
   refreshDataTable() {
 
+  }
+
+  show(data: Device) {
+      this.data = data;
   }
 }
