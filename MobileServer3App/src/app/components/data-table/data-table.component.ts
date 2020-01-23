@@ -19,9 +19,11 @@ export class DataTableComponent implements OnInit {
   device: Device[] = [{}];
   dataSource: MatTableDataSource<Device[]>;
   @Output() detailedData =  new EventEmitter();
+  isLoadingResults: boolean;
 
   constructor(private httpService: ApiService ) {
     this.displayedColumns = ['uuid', 'name', 'id', 'imei'];
+    this.isLoadingResults = false;
   }
 
   ngOnInit() {
@@ -36,10 +38,16 @@ export class DataTableComponent implements OnInit {
   }
 
   loadDevices() {
+    this.isLoadingResults = true;
     this.httpService.getDevices().subscribe(data => {
       this.dataSource = new MatTableDataSource(data.devices);
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
+      this.isLoadingResults = false;
+      console.log(this.isLoadingResults);
+      },
+      error => {
+        this.isLoadingResults = false;
       });
   }
 

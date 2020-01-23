@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,8 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ToolbarComponent implements OnInit {
   userName = 'User';
 
-  constructor() {
-    console.log(localStorage.getItem('user_name'));
+  constructor(private router: Router) {
     this.userName = localStorage.getItem('user_name');
   }
 
@@ -17,4 +17,8 @@ export class ToolbarComponent implements OnInit {
 
   }
 
+  logout() {
+    localStorage.clear();
+    this.router.navigate(['login']);
+  }
 }

@@ -1,11 +1,13 @@
 
-<button class="refresh-button" mat-raised-button color="primary" (click)="loadDevices()">Обновить</button>
+<button class="refresh-button" mat-raised-button color="primary" (click)="loadDevices()">Обновить
+  <mat-icon *ngIf="isLoadingResults"><mat-spinner color="accent" diameter="20">
+  </mat-spinner></mat-icon></button>
 <mat-form-field class="data-table-filter">
   <label>
     <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
   </label>
 </mat-form-field>
-
+<div>
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
   <!-- Position Column -->
@@ -38,3 +40,4 @@
 
 </table>
 <mat-paginator [pageSizeOptions]="[10, 15, 25]"></mat-paginator>
+</div>

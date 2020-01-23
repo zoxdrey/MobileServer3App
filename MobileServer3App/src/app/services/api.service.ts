@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private server = 'http://localhost:8082/api/device/list';
+  private server = 'http://localhost:8082';
   private body: object = {
     project: 'project2',
     Version: '15'
@@ -16,6 +16,12 @@ export class ApiService {
   }
 
   getDevices(): Observable<any> {
-    return this.httpClient.post(this.server, this.body);
+    return this.httpClient.post(this.server + '/api/device/list', this.body);
+  }
+
+  getLicenseInfo(deviceUUID: string) {
+    return this.httpClient.post(this.server + '/api/license/download_request', {
+      id: deviceUUID
+    });
   }
 }
