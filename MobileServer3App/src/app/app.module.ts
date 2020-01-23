@@ -7,13 +7,13 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {
-  MatButtonModule,
-  MatCardModule,
-  MatFormFieldModule, MatIconModule,
-  MatInputModule, MatListModule,
-  MatNativeDateModule, MatPaginatorModule, MatSidenavModule, MatSortModule,
-  MatTableModule, MatTabsModule,
-  MatToolbarModule
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule, MatIconModule,
+    MatInputModule, MatListModule,
+    MatNativeDateModule, MatPaginatorModule, MatProgressSpinnerModule, MatSelectModule, MatSidenavModule, MatSortModule,
+    MatTableModule, MatTabsModule,
+    MatToolbarModule
 } from '@angular/material';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -52,27 +52,29 @@ const appRoutes: Routes = [
     TabComponent,
     SidenavComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
-    MatNativeDateModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatTableModule,
-    MatInputModule,
-    RouterModule.forRoot(appRoutes),
-    MatCardModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatTabsModule,
-    MatSidenavModule,
-    MatListModule,
-    MatPaginatorModule,
-    MatSortModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        HttpClientModule,
+        MatNativeDateModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatTableModule,
+        MatInputModule,
+        RouterModule.forRoot(appRoutes),
+        MatCardModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatTabsModule,
+        MatSidenavModule,
+        MatListModule,
+        MatPaginatorModule,
+        MatSortModule,
+        MatSelectModule,
+        MatProgressSpinnerModule
+    ],
   providers: [AuthService,
   ApiService,
     {

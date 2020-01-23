@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class SidenavComponent implements OnInit {
   mode = 'side';
   isOpen = true;
-  fillerNav = Array.from({length: 5}, (_, i) => `Nav Item ${i + 1}`);
   constructor() { }
 
   ngOnInit() {

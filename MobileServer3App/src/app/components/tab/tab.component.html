@@ -20,7 +20,8 @@
   <mat-card-content>
     Device:<h2>{{data?.name}}</h2><br>
     Name: {{data?.name || '--/--'}}<br>
-    Imei: {{data?.imei || '--/--'}}
+    Imei: {{data?.imei || '--/--'}}<br>
+    <div>Статус активации:<h4>{{deviceActivationInfo?.activationStatus || deviceActivationInfo}}</h4></div>
   </mat-card-content>
   <mat-card-actions>
   </mat-card-actions>

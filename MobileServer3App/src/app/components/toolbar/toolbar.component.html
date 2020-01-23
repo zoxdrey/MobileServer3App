@@ -3,7 +3,11 @@
   <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
   <span>Axelot</span>
   <span class="toolbar-spacer"></span>
-  <span class="toolbar-user-name">{{userName}}</span>
-  <mat-icon class="user-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+  <mat-select [placeholder]="userName" class="user-mat-select">
+    <mat-option (click)="logout()">
+     Выйти
+    </mat-option>
+  </mat-select>
+  <mat-icon class="user-icon" aria-hidden="false">verified_user</mat-icon>
 </mat-toolbar-row>
 </mat-toolbar>

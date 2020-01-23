@@ -8,8 +8,8 @@ import {AuthService} from '../../services/auth/auth.service';
 })
 export class CardComponent implements OnInit {
   @Output() inputType = 'password';
-  @Output() loginPlaceholder = 'Enter login';
-  @Output() passwordPlaceholder = 'Enter password';
+  @Output() loginPlaceholder = 'Имя пользователя';
+  @Output() passwordPlaceholder = 'Пароль';
   login: string;
   password: string;
   constructor(private authService: AuthService) {
