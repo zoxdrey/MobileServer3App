@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {NavigationEnd, Router} from '@angular/router';
+import {filter} from 'rxjs/operators';
 
 @Component({
   selector: 'app-sidenav',
@@ -8,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 export class SidenavComponent implements OnInit {
   mode = 'side';
   isOpen = true;
-  constructor() { }
+  private activeRoute: string;
 
-  ngOnInit() {
+  constructor(private router: Router) {
+    router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.activeRoute = event.url;
+      }
+    });
   }
 
+  ngOnInit() {
+
+  }
 }

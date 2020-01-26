@@ -3,17 +3,20 @@
     <mat-nav-list>
       <a mat-list-item routerLink="/home">Устройства</a>
       <mat-divider></mat-divider>
-      <a mat-list-item routerLink="/some">Приложения</a>
+      <a mat-list-item routerLink="/projects">Проекты</a>
       <mat-divider></mat-divider>
-      <a mat-list-item routerLink="/somesome">Конфигурации</a>
+      <a mat-list-item routerLink="/users">Пользователи</a>
       <mat-divider></mat-divider>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <div class="mat-app-background basic-container">
+  <mat-sidenav-content >
+    <div class="mat-app-background basic-container" *ngIf="activeRoute == '/home'">
       <app-tab></app-tab>
     </div>
-    <div>
+    <div *ngIf="activeRoute == '/projects'">
+
     </div>
+    <div *ngIf="activeRoute == '/users'">
+  </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

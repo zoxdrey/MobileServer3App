@@ -96,7 +96,7 @@ tr.mat-row.ng-star-inserted{
   height: 32px;
 }
 tr.mat-row.ng-star-inserted:hover{
-  background: #7A8B97;
+  background: #439889;
 }
 
 table.mat-table{
@@ -122,12 +122,12 @@ mat-card.mat-card-device-detail{
 }
 
 .mat-toolbar.mat-primary{
-  background-color: #01213A;
+  background-color: #00695c;
 }
 
 button.mat-raised-button.mat-primary
 {
-  background-color: #01213A ;
+  background-color: #00695c ;
 }
 
 mat-select.user-mat-select{

@@ -28,12 +28,16 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import {AuthService} from './services/auth/auth.service';
 import {ApiService} from './services/api.service';
 import {AuthInterceptor} from './services/auth/auth.interceptor';
+import {ProjectsComponent} from './pages/projects/projects.component';
+import {UsersComponent} from './pages/users/users.component';
 
 
 const appRoutes: Routes = [
+  { path: 'login', component: LoginComponent},
 { path: 'home', component: HomeComponent},
+{ path: 'projects', component: ProjectsComponent},
+{ path: 'users', component: UsersComponent},
 { path: '', component: LoginComponent},
-{ path: 'login', component: LoginComponent},
 { path: '**', component: NotFoundComponent }
 ];
 
@@ -50,7 +54,9 @@ const appRoutes: Routes = [
     InputComponent,
     ToolbarComponent,
     TabComponent,
-    SidenavComponent
+    SidenavComponent,
+    UsersComponent,
+    ProjectsComponent
   ],
     imports: [
         BrowserModule,
