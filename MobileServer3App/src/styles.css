@@ -75,6 +75,12 @@ mat-sidenav-container{
   height: 100%;
 }
 
+mat-sidenav-content{
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .mat-list-base .mat-list-item {
   font-size: 18px;
 }
@@ -138,4 +144,13 @@ mat-select.user-mat-select{
   color: aliceblue;
   font-size: 14px;
 }
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar
+{
+  background-color: #00695c;
+}
 
+div.device-detail-block{
+  border: solid 1px rgba(0, 0, 0, 0.33);
+  margin-top: 10px;
+}

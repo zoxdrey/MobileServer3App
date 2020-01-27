@@ -14,15 +14,10 @@
 </mat-tab-group>
 
 
-<mat-card class="mat-card-device-detail">
-  <mat-card-header >
-  </mat-card-header>
-  <mat-card-content>
-    Device:<h2>{{data?.name}}</h2><br>
-    Name: {{data?.name || '--/--'}}<br>
-    Imei: {{data?.imei || '--/--'}}<br>
-    <div>Статус активации:<h4>{{deviceActivationInfo?.activationStatus || deviceActivationInfo}}</h4></div>
-  </mat-card-content>
-  <mat-card-actions>
-  </mat-card-actions>
-</mat-card>
+<div class="device-detail-block"><ul>
+    <li>Device:<h4>{{data?.name}}</h4></li>
+  <li> Name: {{data?.name || '--/--'}}<br></li>
+  <li> Imei: {{data?.imei || '--/--'}}<br></li>
+  <li>Статус активации:<h4>{{deviceActivationInfo?.activationStatus || deviceActivationInfo}}</h4></li>
+  </ul>
+</div>

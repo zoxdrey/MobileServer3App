@@ -30,11 +30,14 @@ import {ApiService} from './services/api.service';
 import {AuthInterceptor} from './services/auth/auth.interceptor';
 import {ProjectsComponent} from './pages/projects/projects.component';
 import {UsersComponent} from './pages/users/users.component';
+import { DevicesComponent } from './pages/devices/devices.component';
+import { SelectComponent } from './components/select/select.component';
 
 
 const appRoutes: Routes = [
-  { path: 'login', component: LoginComponent},
+{ path: 'login', component: LoginComponent},
 { path: 'home', component: HomeComponent},
+  { path: 'devices', component: DevicesComponent},
 { path: 'projects', component: ProjectsComponent},
 { path: 'users', component: UsersComponent},
 { path: '', component: LoginComponent},
@@ -56,7 +59,9 @@ const appRoutes: Routes = [
     TabComponent,
     SidenavComponent,
     UsersComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    DevicesComponent,
+    SelectComponent
   ],
     imports: [
         BrowserModule,

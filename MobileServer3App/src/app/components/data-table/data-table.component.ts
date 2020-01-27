@@ -22,7 +22,7 @@ export class DataTableComponent implements OnInit {
   isLoadingResults: boolean;
 
   constructor(private httpService: ApiService ) {
-    this.displayedColumns = ['uuid', 'name', 'id', 'imei'];
+    this.displayedColumns = ['name', 'id', 'imei'];
     this.isLoadingResults = false;
   }
 
