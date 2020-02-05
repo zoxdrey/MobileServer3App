@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ProjectService} from '../../services/project/project.service';
 import {Observable} from 'rxjs';
+import {ApkService} from '../../services/apk/apk.service';
+import {SettingsService} from '../../services/settings/settings.service';
 
 @Component({
   selector: 'app-select',
@@ -12,14 +14,16 @@ export class SelectComponent implements OnInit {
   selected: '';
   apklist: Observable<any>;
   settingslist: Observable<any>;
-  constructor(private projectService: ProjectService) { }
+  constructor(private projectService: ProjectService, private apkService: ApkService, private settingsService: SettingsService) { }
 
   ngOnInit() {
     this.projectService.getProjectsList().subscribe(projects => this.projects = projects);
   }
 
   getData(selected: string) {
-    this.apklist = this.projectService.getUpdate(selected);
-    this.settingslist = this.projectService.getSettings(selected);
+    this.apklist = this.apkService.getUpdate(selected);
+    this.settingslist = this.settingsService.getSettings(selected);
+    console.log(this.settingslist);
+    console.log(this.apklist);
   }
 }

@@ -1,6 +1,15 @@
 <mat-tab-group>
   <mat-tab label="Устройства">
-    <app-data-table (detailedData)="show($event)"></app-data-table>
+    <app-device-table (detailedData)="show($event)"></app-device-table>
+
+
+    <div class="device-detail-block"><ul>
+      <li>Device:<h4>{{data?.name}}</h4></li>
+      <li> Name: {{data?.name || '--/--'}}<br></li>
+      <li> Imei: {{data?.imei || '--/--'}}<br></li>
+      <li>Статус активации:<h4>{{deviceActivationInfo?.activationStatus || deviceActivationInfo}}</h4></li>
+    </ul>
+    </div>
   </mat-tab>
   <mat-tab label="Активация">
   <br>
@@ -14,10 +23,3 @@
 </mat-tab-group>
 
 
-<div class="device-detail-block"><ul>
-    <li>Device:<h4>{{data?.name}}</h4></li>
-  <li> Name: {{data?.name || '--/--'}}<br></li>
-  <li> Imei: {{data?.imei || '--/--'}}<br></li>
-  <li>Статус активации:<h4>{{deviceActivationInfo?.activationStatus || deviceActivationInfo}}</h4></li>
-  </ul>
-</div>

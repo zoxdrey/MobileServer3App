@@ -2,21 +2,16 @@ import {Component, EventEmitter, OnInit, Output, ViewChild} from '@angular/core'
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 import {ApiService} from '../../services/api.service';
 import {Device} from '../../model/device';
-import {Observable} from 'rxjs';
-import {filter} from 'rxjs/operators';
-
 
 @Component({
-  selector: 'app-data-table',
-  templateUrl: './data-table.component.html',
-  styleUrls: ['./data-table.component.css']
+  selector: 'app-device-table',
+  templateUrl: './device-table.component.html',
+  styleUrls: ['./device-table.component.css']
 })
-export class DataTableComponent implements OnInit {
+export class DeviceTableComponent implements OnInit {
   displayedColumns: string[];
-  // devices: Observable<Device[]>;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
-  device: Device[] = [{}];
   dataSource: MatTableDataSource<Device[]>;
   @Output() detailedData =  new EventEmitter();
   isLoadingResults: boolean;

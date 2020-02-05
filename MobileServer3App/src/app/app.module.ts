@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DataTableComponent } from './components/data-table/data-table.component';
+import { DeviceTableComponent } from './components/device-table/device-table.component';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
@@ -32,6 +32,8 @@ import {ProjectsComponent} from './pages/projects/projects.component';
 import {UsersComponent} from './pages/users/users.component';
 import { DevicesComponent } from './pages/devices/devices.component';
 import { SelectComponent } from './components/select/select.component';
+import { ApkTableComponent } from './components/apk-table/apk-table.component';
+import { SettingsTableComponent } from './components/settings-table/settings-table.component';
 
 
 const appRoutes: Routes = [
@@ -48,7 +50,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    DataTableComponent,
+    DeviceTableComponent,
     HomeComponent,
     LoginComponent,
     NotFoundComponent,
@@ -61,7 +63,9 @@ const appRoutes: Routes = [
     UsersComponent,
     ProjectsComponent,
     DevicesComponent,
-    SelectComponent
+    SelectComponent,
+    ApkTableComponent,
+    SettingsTableComponent
   ],
     imports: [
         BrowserModule,

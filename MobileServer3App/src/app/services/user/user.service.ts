@@ -5,8 +5,6 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-  private server = 'http://localhost:8082';
-
 
   constructor(private httpClient: HttpClient) { }
 }

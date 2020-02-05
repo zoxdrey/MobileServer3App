@@ -1,5 +1,3 @@
-
-
 <mat-form-field>
   <mat-label>Выберите проект</mat-label>
   <mat-select [(value)]="selected">
@@ -10,22 +8,13 @@
 </mat-form-field>
 <div *ngIf="apklist">
   <mat-label><strong>APK:</strong></mat-label>
-<div *ngFor="let apk of apklist | async">
-  <div>{{apk.project}}</div>
-  <div>{{apk.version}}</div>
-  <div>{{apk.size}}</div>
-  <div>{{apk.date}}</div>
-  <mat-divider></mat-divider>
-</div>
+  <div>
+  <app-apk-table [tableData]="apklist"></app-apk-table>
+  </div>
 </div>
 <div *ngIf="settingslist">
-<mat-label><strong>Settings:</strong></mat-label>
-<div *ngFor="let settings of settingslist | async">
-  <div>{{settings.project}}</div>
-  <div>{{settings.version}}</div>
-  <div>{{settings.size}}</div>
-  <div>{{settings.date}}</div>
-  <mat-divider></mat-divider>
+  <mat-label><strong>Settings:</strong></mat-label>
+  <app-settings-table [tableData]="settingslist"></app-settings-table>
 </div>
 
 
