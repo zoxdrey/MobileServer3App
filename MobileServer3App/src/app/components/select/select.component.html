@@ -7,13 +7,9 @@
   </mat-select>
 </mat-form-field>
 <div *ngIf="apklist">
-  <mat-label><strong>APK:</strong></mat-label>
-  <div>
   <app-apk-table [tableData]="apklist"></app-apk-table>
-  </div>
 </div>
 <div *ngIf="settingslist">
-  <mat-label><strong>Settings:</strong></mat-label>
   <app-settings-table [tableData]="settingslist"></app-settings-table>
 </div>
 

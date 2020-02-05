@@ -13,7 +13,7 @@ export class AuthService {
   constructor(private http: HttpClient, private router: Router) { }
 
   login(login: string, password: string) {
-    return this.http.post<User>(SERVER, {login , password})
+    return this.http.post<User>(SERVER + '/api/auth/login', {login , password})
       .subscribe((resp: any) => {
         this.router.navigate(['home']);
         localStorage.setItem('auth_token', resp.token);

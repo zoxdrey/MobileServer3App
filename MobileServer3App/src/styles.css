@@ -154,3 +154,15 @@ div.device-detail-block{
   border: solid 1px rgba(0, 0, 0, 0.33);
   margin-top: 10px;
 }
+button.mat-raised-button.load-apk-button{
+  float: right;
+  margin-bottom: 4px;
+}
+button.mat-raised-button.load-settings-button{
+  float: right;
+  margin-bottom: 4px;
+}
+
+div.apk-table{
+  margin-bottom: 30px;
+}
