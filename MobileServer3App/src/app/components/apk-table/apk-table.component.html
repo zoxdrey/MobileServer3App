@@ -1,14 +1,14 @@
-<div class="apk-table">
-  <div>
+<div *ngIf="tableData">
+  <div class="apk-table">
     <mat-label><strong>Apk:</strong></mat-label>
-  <button mat-raised-button color="primary" class="load-apk-button">Загрузить apk</button>
+  <button mat-raised-button color="primary" class="load-apk-button" (click)="uploadApkFile()">Загрузить apk</button>
   </div>
 
-  <table mat-table [dataSource]="tableData" matSort class="mat-elevation-z8">
+  <table mat-table [dataSource]="tableData" matSort class="mat-elevation-z8" *ngIf=tableData>
 
     <ng-container matColumnDef="project">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> project </th>
-      <td mat-cell *matCellDef="let element"> {{element.project}} </td>
+      <td mat-cell *matCellDef="let element"> {{element.project}}</td>
     </ng-container>
 
 
@@ -30,9 +30,7 @@
 
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="showDetail(row);"></tr>
-
-
+    <tr mat-row  *matRowDef="let row; columns: displayedColumns;" (click)="showDetail(row);"></tr>
   </table>
   <mat-paginator [pageSizeOptions]="[10, 15, 25]">
   </mat-paginator>

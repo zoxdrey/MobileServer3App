@@ -35,15 +35,16 @@ import { SelectComponent } from './components/select/select.component';
 import { ApkTableComponent } from './components/apk-table/apk-table.component';
 import { SettingsTableComponent } from './components/settings-table/settings-table.component';
 
-
+const childrenRoutes: Routes = [
+    { path: 'devices', component: DevicesComponent},
+    { path: 'projects', component: ProjectsComponent},
+    { path: 'users', component: UsersComponent}
+];
 const appRoutes: Routes = [
-{ path: 'login', component: LoginComponent},
-{ path: 'home', component: HomeComponent},
-  { path: 'devices', component: DevicesComponent},
-{ path: 'projects', component: ProjectsComponent},
-{ path: 'users', component: UsersComponent},
-{ path: '', component: LoginComponent},
-{ path: '**', component: NotFoundComponent }
+    { path: 'login', component: LoginComponent},
+    { path: 'home', component: HomeComponent, children: childrenRoutes},
+    { path: '', component: LoginComponent},
+    { path: '**', component: NotFoundComponent }
 ];
 
 

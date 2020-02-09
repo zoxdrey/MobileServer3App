@@ -23,7 +23,5 @@ export class SelectComponent implements OnInit {
   getData(selected: string) {
     this.apklist = this.apkService.getUpdate(selected);
     this.settingslist = this.settingsService.getSettings(selected);
-    console.log(this.settingslist);
-    console.log(this.apklist);
   }
 }

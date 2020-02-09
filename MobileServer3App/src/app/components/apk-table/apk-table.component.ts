@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-apk-table',
@@ -6,15 +7,19 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./apk-table.component.css']
 })
 export class ApkTableComponent implements OnInit {
-  @Input() tableData: any;
-  private displayedColumns: string[];
+  @Input() tableData: Observable<any>;
+  displayedColumns: string[];
 
   constructor() {
     this.displayedColumns = ['project', 'version', 'size', 'date'];
   }
 
   ngOnInit() {
-    console.log(this.tableData);
   }
 
+  showDetail(row){
+    console.log(row);
+  }
+
+  
 }
