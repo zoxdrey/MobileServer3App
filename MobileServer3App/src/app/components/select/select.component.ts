@@ -3,6 +3,7 @@ import {ProjectService} from '../../services/project/project.service';
 import {Observable} from 'rxjs';
 import {ApkService} from '../../services/apk/apk.service';
 import {SettingsService} from '../../services/settings/settings.service';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-select',
@@ -23,5 +24,6 @@ export class SelectComponent implements OnInit {
   getData(selected: string) {
     this.apklist = this.apkService.getUpdate(selected);
     this.settingslist = this.settingsService.getSettings(selected);
+    console.log(this.apklist);
   }
 }

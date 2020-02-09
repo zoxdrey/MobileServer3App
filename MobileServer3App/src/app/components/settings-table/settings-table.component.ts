@@ -21,10 +21,7 @@ export class SettingsTableComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.settingsService.getSettings(this.projectName).subscribe((tableData) => {
-    this.dataSource = new MatTableDataSource(tableData);
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;})
+      this.loadSettingsList();
   }
 
   showDetail(row){
@@ -33,5 +30,12 @@ export class SettingsTableComponent implements OnInit {
 
   uploadSettingsFile(){
     this.settingsService.uploadSettingsFile(this.projectName).subscribe();
+  }
+
+  loadSettingsList(){
+    this.settingsService.getSettings(this.projectName).subscribe((tableData) => {
+      this.dataSource = new MatTableDataSource(tableData);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;})
   }
 }

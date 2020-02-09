@@ -1,8 +1,9 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialogRef, MAT_DIALOG_DATA, MatSnackBar } from '@angular/material';
 import { DialogData } from 'src/app/shared/dialog-data';
 import { ApkService } from 'src/app/services/apk/apk.service';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import { SnackBarComponent } from '../snack-bar/snack-bar.component';
 
 
 @Component({
@@ -17,7 +18,8 @@ export class ApkFileUploadModalComponent implements OnInit {
   fileName: string;
   constructor( public dialogRef: MatDialogRef<ApkFileUploadModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
-    private apkService: ApkService) { }
+    private apkService: ApkService,
+    private _snackBar: MatSnackBar) { }
 
   ngOnInit() {
 
@@ -33,7 +35,11 @@ export class ApkFileUploadModalComponent implements OnInit {
       reader.readAsDataURL(file);
       reader.onload = () => {
         let uploadFile = reader.result.toString().split(',')[1];
-        this.apkService.uploadApkFile(this.data.projectName, uploadFile, this.fileVersion).subscribe(()=> this.dialogRef.close());
+        this.apkService.uploadApkFile(this.data.projectName, uploadFile, this.fileVersion).subscribe(()=>{
+          this._snackBar.openFromComponent(SnackBarComponent,{
+            duration: 4,
+          });
+          this.dialogRef.close();});
       };
    // 
   }

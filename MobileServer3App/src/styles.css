@@ -52,9 +52,9 @@ table {
 .mat-form-field {
   font-size: 14px;
 }
-mat-form-field{
+.snack-bar{
+  background-color: #00695c;
 }
-
 .user-icon {
   padding: 0 14px;
 }

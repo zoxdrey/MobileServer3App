@@ -23,17 +23,14 @@ export class ApkTableComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.apkService.getUpdate(this.projectName).subscribe((tableData) => {
-    this.dataSource = new MatTableDataSource(tableData);
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;})
+   this.loadApkList();
   }
 
   showDetail(row){
     console.log(row);
   }
 
-  uploadApkFile(){
+  c(){
     const dialogRef = this.dialog.open(ApkFileUploadModalComponent, {
       width: '250px',
       data: {projectName: this.projectName}
@@ -48,4 +45,12 @@ export class ApkTableComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
+
+  loadApkList(){
+    this.apkService.getUpdate(this.projectName).subscribe((tableData) => {
+      this.dataSource = new MatTableDataSource(tableData);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;})
+  }
+
 }

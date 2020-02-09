@@ -1,5 +1,6 @@
 <div>
   <mat-label><strong>Settings:</strong></mat-label>
+  <button mat-raised-button color="primary" class="load-settings-button" (click)="loadSettingsList()">Обновить</button>
   <button mat-raised-button color="primary" class="load-settings-button" (click)="uploadSettingsFile()">Загрузить настройки</button>
   <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 

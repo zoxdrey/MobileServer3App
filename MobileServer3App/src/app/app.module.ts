@@ -15,7 +15,8 @@ import {
     MatTableModule, MatTabsModule,
     MatToolbarModule,
     MatDialog,
-    MatDialogModule
+    MatDialogModule,
+    MatSnackBar
 } from '@angular/material';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -37,6 +38,8 @@ import { SelectComponent } from './components/select/select.component';
 import { ApkTableComponent } from './components/apk-table/apk-table.component';
 import { SettingsTableComponent } from './components/settings-table/settings-table.component';
 import { ApkFileUploadModalComponent } from './components/apk-file-upload-modal/apk-file-upload-modal.component';
+import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
+import { MatSnackBarModule } from '@angular/material';
 
 const childrenRoutes: Routes = [
     { path: 'devices', component: DevicesComponent},
@@ -70,7 +73,8 @@ const appRoutes: Routes = [
     SelectComponent,
     ApkTableComponent,
     SettingsTableComponent,
-    ApkFileUploadModalComponent
+    ApkFileUploadModalComponent,
+    SnackBarComponent
   ],
     imports: [
         BrowserModule,
@@ -94,9 +98,11 @@ const appRoutes: Routes = [
         MatSortModule,
         MatSelectModule,
         MatProgressSpinnerModule,
-        MatDialogModule
+        MatDialogModule,
+        MatSnackBarModule
     ],
-    entryComponents: [ApkFileUploadModalComponent],
+    entryComponents: [ApkFileUploadModalComponent,
+      SnackBarComponent],
   providers: [AuthService,
   ApiService,
     {
@@ -104,7 +110,8 @@ const appRoutes: Routes = [
       useClass: AuthInterceptor,
       multi: true
     },
-    MatDialog],
+    MatDialog,
+    MatSnackBar],
   bootstrap: [AppComponent]
 })
 export class AppModule {
