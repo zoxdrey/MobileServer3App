@@ -1,22 +1,19 @@
 <div>
   <mat-label><strong>Settings:</strong></mat-label>
-  <button mat-raised-button color="primary" class="load-settings-button">Загрузить настройки</button>
-  <table mat-table [dataSource]="tableData" matSort class="mat-elevation-z8">
+  <button mat-raised-button color="primary" class="load-settings-button" (click)="uploadSettingsFile()">Загрузить настройки</button>
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
-
-    <!-- Name Column -->
     <ng-container matColumnDef="project">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> project </th>
       <td mat-cell *matCellDef="let element"> {{element.project}} </td>
     </ng-container>
 
-    <!-- Weight Column -->
+  
     <ng-container matColumnDef="version">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> version </th>
       <td mat-cell *matCellDef="let element"> {{element.version}} </td>
     </ng-container>
 
-    <!-- Symbol Column -->
     <ng-container matColumnDef="size">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> size </th>
       <td mat-cell *matCellDef="let element"> {{element.size}} </td>

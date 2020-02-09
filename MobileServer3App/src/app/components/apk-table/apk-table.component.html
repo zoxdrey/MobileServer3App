@@ -1,10 +1,7 @@
-<div *ngIf="tableData">
-  <div class="apk-table">
+<div>
     <mat-label><strong>Apk:</strong></mat-label>
   <button mat-raised-button color="primary" class="load-apk-button" (click)="uploadApkFile()">Загрузить apk</button>
-  </div>
-
-  <table mat-table [dataSource]="tableData" matSort class="mat-elevation-z8" *ngIf=tableData>
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
     <ng-container matColumnDef="project">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> project </th>

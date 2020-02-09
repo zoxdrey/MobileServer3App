@@ -13,7 +13,9 @@ import {
     MatInputModule, MatListModule,
     MatNativeDateModule, MatPaginatorModule, MatProgressSpinnerModule, MatSelectModule, MatSidenavModule, MatSortModule,
     MatTableModule, MatTabsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatDialog,
+    MatDialogModule
 } from '@angular/material';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -34,6 +36,7 @@ import { DevicesComponent } from './pages/devices/devices.component';
 import { SelectComponent } from './components/select/select.component';
 import { ApkTableComponent } from './components/apk-table/apk-table.component';
 import { SettingsTableComponent } from './components/settings-table/settings-table.component';
+import { ApkFileUploadModalComponent } from './components/apk-file-upload-modal/apk-file-upload-modal.component';
 
 const childrenRoutes: Routes = [
     { path: 'devices', component: DevicesComponent},
@@ -66,7 +69,8 @@ const appRoutes: Routes = [
     DevicesComponent,
     SelectComponent,
     ApkTableComponent,
-    SettingsTableComponent
+    SettingsTableComponent,
+    ApkFileUploadModalComponent
   ],
     imports: [
         BrowserModule,
@@ -89,15 +93,18 @@ const appRoutes: Routes = [
         MatPaginatorModule,
         MatSortModule,
         MatSelectModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        MatDialogModule
     ],
+    entryComponents: [ApkFileUploadModalComponent],
   providers: [AuthService,
   ApiService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
       multi: true
-    }],
+    },
+    MatDialog],
   bootstrap: [AppComponent]
 })
 export class AppModule {

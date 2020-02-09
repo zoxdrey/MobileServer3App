@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Загрузка файла в {{data.projectName}}</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Версия файла</mat-label>
+    <input matInput [(ngModel)]="fileVersion">
+  </mat-form-field>
+<button  mat-raised-button color="primary" (click)="fileInput.click()" >Выбрать файл</button>
+<input hidden (change)="fileChoose($event)" #fileInput type="file" id="file">
+<div *ngIf="fileName">{{fileName}}</div>
+  <mat-divider></mat-divider>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button color="primary" cdkFocusInitial (click)="onLoad()">Загрузить</button>
+    <button mat-raised-button color="primary" (click)="onNoClick()">Закрыть</button>
+</div>

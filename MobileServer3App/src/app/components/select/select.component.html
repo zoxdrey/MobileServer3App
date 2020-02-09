@@ -7,10 +7,10 @@
   </mat-select>
 </mat-form-field>
 <div *ngIf="apklist">
-  <app-apk-table [tableData]="apklist"></app-apk-table>
+  <app-apk-table [projectName]="selected"></app-apk-table>
 </div>
 <div *ngIf="settingslist">
-  <app-settings-table [tableData]="settingslist"></app-settings-table>
+  <app-settings-table [projectName]="selected"></app-settings-table>
 </div>
 
 

@@ -39,7 +39,6 @@ export class DeviceTableComponent implements OnInit {
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
       this.isLoadingResults = false;
-      console.log(this.isLoadingResults);
       },
       error => {
         this.isLoadingResults = false;
