@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output, Input} from '@angular/core';
 import {AuthService} from '../../services/auth/auth.service';
 
 @Component({
@@ -8,11 +8,12 @@ import {AuthService} from '../../services/auth/auth.service';
 })
 export class ButtonComponent implements OnInit {
   @Output() loginButtonClicked = new EventEmitter();
-
+  @Input() isDisabled;
   constructor(private authService: AuthService) {
   }
 
   ngOnInit() {
+    console.log(this.isDisabled);
   }
 
   login() {

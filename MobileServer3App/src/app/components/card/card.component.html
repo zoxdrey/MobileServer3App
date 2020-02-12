@@ -2,15 +2,16 @@
 <mat-card class="login-card">
   <mat-card-header><p class="login-title">Вход</p>
   </mat-card-header>
-  <mat-card-content class="login-card-content">
+  <mat-card-content [formGroup] = "loginForm" class="login-card-content">
     <p>
-      <app-input ngDefaultControl [placeholder]="loginPlaceholder" [(ngModel)]="login"></app-input>
+      <app-input formControlName = 'login' ngDefaultControl [placeholder]="loginPlaceholder" [(ngModel)]="login"></app-input>
     </p>
     <p>
-      <app-input ngDefaultControl [type]=inputType [placeholder]="passwordPlaceholder" [(ngModel)]="password"></app-input>
+      <app-input formControlName = 'password' ngDefaultControl [type]=inputType [placeholder]="passwordPlaceholder" [(ngModel)]="password"></app-input>
     </p>
+
   </mat-card-content>
   <mat-card-actions>
-    <app-button (loginButtonClicked)="cardLogin()"></app-button>
+    <app-button [isDisabled] = "!loginForm.valid" (loginButtonClicked)="cardLogin()"></app-button>
   </mat-card-actions>
 </mat-card>

@@ -1,5 +1,6 @@
 import {Component, OnInit, Output} from '@angular/core';
 import {AuthService} from '../../services/auth/auth.service';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-card',
@@ -12,14 +13,18 @@ export class CardComponent implements OnInit {
   @Output() passwordPlaceholder = 'Пароль';
   login: string;
   password: string;
-  constructor(private authService: AuthService) {
+  loginForm = this.fb.group({
+    login: ['', Validators.required],
+    password: ['', Validators.required],
+});
+
+  constructor(private authService: AuthService, private fb: FormBuilder) {
   }
 
   ngOnInit() {
   }
 
   cardLogin() {
-    this.authService.login(this.login, this.password);
-    console.log(this.login, this.password);
+    this.authService.login(this.loginForm.value);
   }
 }
