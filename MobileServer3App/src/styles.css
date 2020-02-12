@@ -23,10 +23,14 @@ body, html {
   display: flex;
   padding: 30px;
 }
+div.mat-card-header-text{
+  margin: 0 0;
+}
 
 .login-title{
   font-size: 22px;
   text-align: center;
+  margin: auto;
 }
 
 app-button{
@@ -101,9 +105,16 @@ border: 1px;
 tr.mat-row.ng-star-inserted{
   height: 32px;
 }
+
+tr.mat-row.ng-star-inserted.selected{
+  background: #00695c;
+}
+
 tr.mat-row.ng-star-inserted:hover{
   background: #439889;
 }
+
+
 
 table.mat-table{
   border: 1px solid rgba(0, 0, 0, 0.33);

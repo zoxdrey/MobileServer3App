@@ -9,6 +9,7 @@ import {Device} from '../../model/device';
   styleUrls: ['./device-table.component.css']
 })
 export class DeviceTableComponent implements OnInit {
+  selectedRow: any;
   displayedColumns: string[];
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
@@ -46,6 +47,8 @@ export class DeviceTableComponent implements OnInit {
   }
 
   showDetail(row: any) {
+    this.selectedRow = row;
+    console.log(this.selectedRow);
     this.detailedData.emit(row);
   }
 }

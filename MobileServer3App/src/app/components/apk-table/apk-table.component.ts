@@ -30,7 +30,7 @@ export class ApkTableComponent implements OnInit {
     console.log(row);
   }
 
-  c(){
+  uploadApkFile(){
     const dialogRef = this.dialog.open(ApkFileUploadModalComponent, {
       width: '250px',
       data: {projectName: this.projectName}
