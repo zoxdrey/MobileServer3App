@@ -17,7 +17,7 @@ export class SettingsTableComponent implements OnInit {
   dataSource: MatTableDataSource<Settings>;
 
   constructor(private settingsService: SettingsService) {
-    this.displayedColumns = ['project', 'version', 'size', 'date'];
+    this.displayedColumns = ['project', 'version', 'size', 'date', " "];
   }
 
   ngOnInit() {
